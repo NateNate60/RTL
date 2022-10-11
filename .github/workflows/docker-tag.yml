@@ -2,8 +2,9 @@ name: Build stable Docker image
 
 on:
   push:
-    tags:
-      - "v*"
+    branches: [ 'ci-test' ]
+    tags: [ "v*" ]
+  workflow_dispatch:
 
 jobs:
   build:

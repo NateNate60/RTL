@@ -2,9 +2,8 @@ name: Build latest Docker image
 
 on:
   push:
-    branches: [ master ]
+    branches: [ 'master', 'ci-test' ]
   workflow_dispatch:
-
 
 jobs:
   build:

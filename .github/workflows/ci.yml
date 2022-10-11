@@ -85,5 +85,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: rtl-build-${{ github.event.release.tag_name }}
+          name: rtl-build-0.13.2-rc1
           path: /tmp/rtlbuild.tar.gz
