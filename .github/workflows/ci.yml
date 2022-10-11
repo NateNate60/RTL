@@ -16,6 +16,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://github.com/Ride-The-Lightning/RTL/settings/environments
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
